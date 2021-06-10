@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заказа</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="callback">
+            <div class="container">
+                <div class="callback__item">
+                    <picture>
+                        <source srcset="./assets/img/reduslim-banner.png" media="(min-width: 768px)">
+                        <source srcset="./assets/img/reduslim-banner_mobile.png" media="(max-width: 768px)">
+                        <img class="callback__photo" src="./assets/img/reduslim-banner.png" alt="Reduslim ECO">
+                    </picture>
+                </div>
+                <form class="callback__item callback__form" action="/" method="POST">
+                    <h2 class="callback__title">Сделай шаг <br> к выздоровлению</h2>
+                    <label class="callback__label" for="userName">Ваше <span class="text-green">имя</span>
+                        <input type="text" class="callback__input callback__username" placeholder="Алексей"
+                            id="userName" name="userName">
+                    </label>
+                    <div class="callback__number">
+                        <label class="callback__label" for="userNumber">Ваш <span class="text-green">телефон</span>
+                            <input type="text" class="callback__input callback__number-field"
+                                placeholder="+7 (123) 456 78-90" id="userNumber" name="userNumber">
+                        </label>
+                        <div class="callback__label callback__country" id="userCountry">
+                            <div class="callback__country-selected">
+                                <span>RU</span>
+                                <img class="callback__country-icon" src="./assets/img/icons/country_ru.png" alt="RU">
+                            </div>
+                            <img class="" src="./assets/img/icons/arrow_bottom.png" alt="RU">
+                            <div class="callback__country-select">
+                                <div class="callback-country__item">
+                                    <span>RU</span>
+                                    <img class="callback__country-icon" src="./assets/img/icons/country_ru.png"
+                                        alt="RU">
+                                </div>
+                                <div class="callback-country__item">
+                                    <span>UA</span>
+                                    <img class="callback__country-icon" src="./assets/img/icons/country_ua.svg"
+                                        alt="UA">
+                                </div>
+                                <div class="callback-country__item">
+                                    <span>BY</span>
+                                    <img class="callback__country-icon" src="./assets/img/icons/country_by.svg"
+                                        alt="BY">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="callback__btn">Заказать</button>
+                </form>
+                <footer>
+                    <span>Trusted</span>
+                    <img class="footer__icon" src="./assets/img/icons/lock.png" alt="">
+                    <span>Secure</span>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
